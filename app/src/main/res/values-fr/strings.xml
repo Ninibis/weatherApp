@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="main_forecast">Prévisions</string>
+
+    <string name="favory_title">Favoris</string>
+
+    <string name="degree">°C</string>
+
+    <string name="map_here">Vous êtes ici!</string>
+
+    <string name="monday">lun.</string>
+    <string name="tuesday">mar.</string>
+    <string name="wednesday">mer.</string>
+    <string name="thursday">jeu.</string>
+    <string name="friday">ven.</string>
+    <string name="saturday">sam.</string>
+    <string name="sunday">dim.</string>
+
+    <string name="toast_main_error_gps">Vos coordonnées GPS sont nécessaires pour afficher la météo.</string>
+    <string name="toast_map_error">Erreur lors de la création de la carte.</string>
+    <string name="toast_fav_request_error">La requête n\'a pas pu aboutir.</string>
+    <string name="toast_fav_file_error">Les favoris n\'ont pas pu être récupérés.</string>
+
+    <string name="dialog_main_activate_gps">Le GPS n\'est pas activé, souhaitez-vous l\'activer ?</string>
+    <string name="dialog_fav_suppress">Supprimer</string>
+
+</resources>

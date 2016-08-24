@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="police_main_temperature">65sp</dimen>
+    <dimen name="police_main_city">30sp</dimen>
+    <dimen name="police_main_summary">25sp</dimen>
+
+    <dimen name="police_main_forecast_title">20sp</dimen>
+    <dimen name="police_main_forecast_day">20sp</dimen>
+    <dimen name="police_main_forecast_temp_min">18sp</dimen>
+    <dimen name="police_main_forecast_temp_max">20sp</dimen>
+
+    <dimen name="police_fav_city">20sp</dimen>
+
+
+    <dimen name="main_top_padding">15dp</dimen>
+    <dimen name="main_top_between_margin">30dp</dimen>
+
+    <dimen name="main_bottom_card_margin">30dp</dimen>
+    <dimen name="main_bottom_card_layout_margin">10dp</dimen>
+    <dimen name="main_bottom_card_content_margin">5dp</dimen>
+
+    <dimen name="main_forecast_icon_size">30dp</dimen>
+
+    <dimen name="main_fab_margin">16dp</dimen>
+
+
+    <dimen name="fav_title_padding">15dp</dimen>
+    <dimen name="fav_title_margin">30dp</dimen>
+    <dimen name="fav_title_heigt">70dp</dimen>
+
+    <dimen name="fav_list_height">60dp</dimen>
+
+    <dimen name="progress_bar_size">60dp</dimen>
+
+</resources>

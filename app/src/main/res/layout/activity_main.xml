@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    >
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="@dimen/main_top_padding"
+            android:background="@color/orange">
+
+
+            <TextView
+                android:id="@+id/text_view_city"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/police_main_city"
+                android:textAllCaps="true"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/text_view_summary"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/police_main_summary"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/main_top_between_margin">
+
+                <ImageView
+                    android:id="@+id/image_view_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:id="@+id/text_view_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/police_main_temperature"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_bottom_card_margin"
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/main_bottom_card_layout_margin">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_forecast"
+                        android:textSize="@dimen/police_main_forecast_title"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/main_bottom_card_content_margin"
+                        android:textColor="@color/orange"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/main_bottom_card_content_margin">
+
+                        <include
+                            android:id="@+id/item_forecast_1"
+                            layout="@layout/item_forecast" />
+
+                        <include
+                            android:id="@+id/item_forecast_2"
+                            layout="@layout/item_forecast" />
+                        <include
+                            android:id="@+id/item_forecast_3"
+                            layout="@layout/item_forecast" />
+                        <include
+                            android:id="@+id/item_forecast_4"
+                            layout="@layout/item_forecast" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_fab_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_favorite_white_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="openFavori"/>
+
+</RelativeLayout>

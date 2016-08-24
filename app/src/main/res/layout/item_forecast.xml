@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/text_view_forecast_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/police_main_forecast_day"/>
+
+    <ImageView
+        android:id="@+id/image_view_forecast_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_forecast_icon_size"
+        />
+
+    <TextView
+        android:id="@+id/text_view_forecast_temp_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/police_main_forecast_temp_min"
+        android:textColor="@color/colorPrimaryLight"/>
+
+
+    <TextView
+        android:id="@+id/text_view_forecast_temp_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/police_main_forecast_temp_max"/>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="main_forecast">Forecast</string>
+
+    <string name="favory_title">Favorites</string>
+
+    <string name="degree">°C</string>
+
+    <string name="map_here">You\'re here!</string>
+
+    <string name="monday">mon.</string>
+    <string name="tuesday">tue.</string>
+    <string name="wednesday">wed.</string>
+    <string name="thursday">thu.</string>
+    <string name="friday">fri.</string>
+    <string name="saturday">sat.</string>
+    <string name="sunday">sun.</string>
+
+    <string name="toast_main_error_gps">Your location is needed to display weather informations</string>
+    <string name="toast_map_error">Error when creating map.</string>
+    <string name="toast_fav_request_error">Error in the request.</string>
+    <string name="toast_fav_file_error">Favorites are not readable.</string>
+
+    <string name="dialog_main_activate_gps">GPS is not activated. Do you want to activate it ?</string>
+    <string name="dialog_fav_suppress">Suppress</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.FavoritesActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_fav_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fav_title_heigt"
+            android:paddingLeft="@dimen/fav_title_padding"
+            android:paddingBottom="@dimen/fav_title_padding"
+            android:text="@string/favory_title"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/police_main_city"
+            android:gravity="bottom"
+            android:layout_marginBottom="@dimen/fav_title_margin"/>
+
+        <ProgressBar
+            android:id="@+id/fav_progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="@dimen/progress_bar_size"
+            android:layout_height="@dimen/progress_bar_size"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"/>
+
+        <ListView
+            android:id="@+id/list_view_favoris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_fav_title"
+            ></ListView>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_fab_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_search_white_24dp"
+        android:onClick="buttonSearch"
+        app:layout_anchor="@id/text_view_fav_title"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
